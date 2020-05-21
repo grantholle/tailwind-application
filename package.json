@@ -1,14 +1,15 @@
 {
   "name": "tailwind-application",
   "version": "1.0.0",
-  "description": "",
+  "description": "My application for the open position on the Tailwind team.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "dev": "./node_modules/.bin/tailwind build styles.css -o output.css",
+    "build": "NODE_ENV=production ./node_modules/.bin/tailwind build styles.css -o output.css"
   },
   "keywords": [],
-  "author": "",
-  "license": "ISC",
+  "author": "Grant Holle <hollegrant@gmail.com>",
+  "license": "MIT",
   "dependencies": {
     "tailwindcss": "^1.4.6"
   }
